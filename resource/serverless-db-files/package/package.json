@@ -1,0 +1,43 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development sls offline --stage development",
+		"test": "jest --config  ./jest.config.js",
+    "dynamodb": "cross-env NODE_ENV=development botdblocal serverless-dynamodb"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-jest": "^25.1.0",
+    "botdblocal": "^0.1.1",
+    "babel-plugin-rewire": "^1.2.0",
+		"cross-env": "^6.0.3",
+		"eslint": "^5.16.0",
+		"jest": "^25.1.0",
+		"rewire": "^4.0.1",
+		"supertest": "^4.0.2",
+		"serverless": "^1.63.0",
+		"serverless-dynamodb-local": "0.2.37",
+		"serverless-offline": "^5.12.1"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "@zoomus/botservice": "^0.1.0",
+		"fs-extra": "^8.1.0",
+		"cors": "^2.8.5",
+		"body-parser": "^1.19.0",
+		"compression": "^1.7.4",
+		"express": "^4.17.1",
+		"serverless-http": "^2.3.0",
+		"hbs": "^4.1.0",
+		"jsonwebtoken": "^8.5.1",
+		"cookie-parser": "^1.4.4",
+    "moment": "^2.24.0",
+    "@hapi/joi": "15.1.1",
+    "dynogels": "9.1.0",
+    "botdynamodb": "^0.1.1"
+  }
+}
