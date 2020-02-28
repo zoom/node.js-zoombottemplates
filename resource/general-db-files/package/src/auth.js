@@ -1,7 +1,7 @@
 let jwt = require('jsonwebtoken');
 let moment = require('moment');
 module.exports = async (req, res) => {
-  let { zoomApp, zoomError, databaseModels } = res.locals;
+  let { zoomApp, zoomError, databaseModels,request } = res.locals;
   if (!zoomError) {
     let tokens = zoomApp.auth.getTokens(); //get zoom token
     let info = jwt.decode(zoomApp.auth.tokens.access_token); //parse token to multiple information

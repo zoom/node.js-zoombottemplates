@@ -1,7 +1,7 @@
 let moment = require('moment');
 
 module.exports = async (req, res) => {
-  let { zoomApp, zoomError, zoomWebhook, databaseModels } = res.locals;
+  let { zoomApp, zoomError, zoomWebhook, databaseModels,request } = res.locals;
   if (!zoomError) {
     let { type, payload } = zoomWebhook;
     let { toJid, userJid, userId, accountId } = payload;

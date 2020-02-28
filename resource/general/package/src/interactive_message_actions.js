@@ -1,5 +1,5 @@
 module.exports = async (req, res) => {
-  let { zoomApp, zoomError, zoomWebhook, databaseModels } = res.locals;
+  let { zoomApp, zoomError, zoomWebhook, databaseModels,request } = res.locals;
   if (!zoomError) {
     let { type, payload } = zoomWebhook;
     let { toJid, accountId, actionItem } = payload;
