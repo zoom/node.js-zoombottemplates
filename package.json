@@ -1,6 +1,6 @@
 {
   "name": "@zoomus/zoombottemplates",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "templates for @zoomus/chatbot-cli",
   "main": "index.js",
   "scripts": {
